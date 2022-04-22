@@ -88,6 +88,7 @@ DATABASES = {
         'NAME': 'TZ',
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'postgres',
+        'PORT': 42031,
 }
 }
 
