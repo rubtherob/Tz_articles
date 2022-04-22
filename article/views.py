@@ -15,7 +15,7 @@ class Author(permissions.BasePermission):
 
 
 class ArticleView(ModelViewSet):
-    queryset = Artcle.objects.all()
+    queryset = Article.objects.all()
     serializer_class = ArticleSerializer
     permission_classes = (DjangoModelPermissionsOrAnonReadOnly,Author)
 
