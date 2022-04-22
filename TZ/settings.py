@@ -86,9 +86,10 @@ DATABASES = {
 
     'default': {
         'NAME': 'TZ',
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'postgres',
-        'HOST': 'localhost',
+        'PORT':42031,
+
 }
 }
 
