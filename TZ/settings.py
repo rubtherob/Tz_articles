@@ -79,18 +79,18 @@ WSGI_APPLICATION = 'TZ.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
     'default': {
-        'NAME': 'TZ',
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'postgres',
-        'PORT': 42031,
-        'HOST': 'localhost',
-}
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+
+#     'default': {
+#         'NAME': 'TZ',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'USER': 'postgres',
+#         'PORT': 42031,
+#         'HOST': 'localhost',
+# }
 }
 
 
