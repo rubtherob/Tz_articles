@@ -5,7 +5,7 @@ from django.db import models
 
 
 
-class Artcle(models.Model):
+class Article(models.Model):
     text = models.TextField(max_length=200)
     time_create = models.DateTimeField(auto_now_add=True)
     creator = models.ForeignKey(settings.AUTH_USER_MODEL,  on_delete=models.PROTECT)

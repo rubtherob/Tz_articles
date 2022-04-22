@@ -4,7 +4,7 @@ from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
-from article.models import Artcle
+from article.models import Article
 from article.serializers import ArticleSerializer
 
 class Author(permissions.BasePermission):
@@ -21,9 +21,9 @@ class ArticleView(ModelViewSet):
 
     def list(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-            queryset = Artcle.objects.all()
+            queryset = Article.objects.all()
         else:
-            queryset = Artcle.objects.filter(Private=False)
+            queryset = Article.objects.filter(Private=False)
 
         page = self.paginate_queryset(queryset)
         if page is not None:
