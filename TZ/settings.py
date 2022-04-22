@@ -88,8 +88,6 @@ DATABASES = {
         'NAME': 'TZ',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'postgres',
-        'PORT':42031,
-
 }
 }
 
